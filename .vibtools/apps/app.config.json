@@ -4,62 +4,55 @@
   "slug": "calgrid",
   "name": "CalGrid",
   "tagline": "Batch Google Calendar invitations with anti-spam personalization — no admin rights required.",
-  "description": "CalGrid is a Windows desktop application for scheduling and dispatching personalized Google Calendar invitations in bulk. It supports anti-spam dynamic tags, spintax, multi-workspace tabs, Google Drive attachments, and high-deliverability batching — all without requiring administrator privileges.",
-  "category": "productivity",
-  "platforms": ["windows"],
-  "license": "commercial",
+  "category": "Productivity",
+  "access": "Paid",
+  "icon": "https://raw.githubusercontent.com/vibdocs/CalGrid/main/.vibtools/logo.png",
   "latest": "1.0.4",
-  "installer": "https://dl.vib.tools/CalGrid/installer.ps1",
+  "installer": {
+    "type": "powershell",
+    "script": ".vibtools/apps/installer.ps1"
+  },
+  "docs": {
+    "features": ".vibtools/apps/features.md",
+    "changelog": ".vibtools/apps/changelog.md"
+  },
+  "platforms": [
+    "Windows 10/11"
+  ],
+  "architectures": [
+    "x64"
+  ],
+  "requirements": [
+    "Windows 10 or Windows 11 (64-bit)",
+    "PowerShell 5.1 or PowerShell 7+"
+  ],
   "links": {
-    "homepage": "https://vib.tools/calgrid",
     "docs": "https://docs.vib.tools/calgrid",
-    "support": "https://vib.tools/calgrid"
+    "source": "https://github.com/vibdocs/CalGrid"
   },
   "versions": {
     "1.0.4": {
+      "url": "https://dl.vib.tools/CalGrid/v1.0.4/CalGrid-v1.0.4-win-x64.zip",
+      "installer": "https://dl.vib.tools/CalGrid/v1.0.4/installer.ps1",
+      "size": "183 MB",
+      "sha256": "e4178cc65e511d98401ecb25500fa100aaaf5056d6a7272d679f0e55db1ca108",
       "released_at": "2026-11-20",
-      "channel": "stable",
-      "platforms": ["windows"],
-      "artifacts": [
-        {
-          "platform": "windows",
-          "arch": "x64",
-          "url": "https://dl.vib.tools/CalGrid/v1.0.4/CalGrid-v1.0.4-win-x64.zip",
-          "size": "183 MB",
-          "sha256": "e4178cc65e511d98401ecb25500fa100aaaf5056d6a7272d679f0e55db1ca108",
-          "installer": "https://dl.vib.tools/CalGrid/v1.0.4/installer.ps1"
-        }
-      ]
+      "channel": "stable"
     },
     "1.0.3": {
+      "url": "https://dl.vib.tools/CalGrid/v1.0.3/CalGrid-v1.0.3-win-x64.zip",
+      "installer": "https://dl.vib.tools/CalGrid/v1.0.3/installer.ps1",
+      "size": "183 MB",
+      "sha256": "f9ba647c00b2068fae408c16b81c741658631a9d633c82a2cb31e73339904f26",
       "released_at": "2026-11-20",
-      "channel": "stable",
-      "platforms": ["windows"],
-      "artifacts": [
-        {
-          "platform": "windows",
-          "arch": "x64",
-          "url": "https://dl.vib.tools/CalGrid/v1.0.3/CalGrid-v1.0.3-win-x64.zip",
-          "size": "183 MB",
-          "sha256": "f9ba647c00b2068fae408c16b81c741658631a9d633c82a2cb31e73339904f26",
-          "installer": "https://dl.vib.tools/CalGrid/v1.0.3/installer.ps1"
-        }
-      ]
+      "channel": "stable"
     },
     "1.0.2": {
+      "url": "https://dl.vib.tools/CalGrid/v1.0.2/CalGrid-v1.0.2-win-x64.zip",
+      "size": "183 MB",
+      "sha256": "6a81522bc441fa37e059f4ac10ab1df3bfcaa68939994f2e91364c8b427cf510",
       "released_at": "2026-11-16",
-      "channel": "stable",
-      "platforms": ["windows"],
-      "artifacts": [
-        {
-          "platform": "windows",
-          "arch": "x64",
-          "url": "https://dl.vib.tools/CalGrid/v1.0.2/CalGrid-v1.0.2-win-x64.zip",
-          "size": "183 MB",
-          "sha256": "6a81522bc441fa37e059f4ac10ab1df3bfcaa68939994f2e91364c8b427cf510",
-          "installer": "https://dl.vib.tools/CalGrid/v1.0.2/installer.ps1"
-        }
-      ]
+      "channel": "stable"
     }
   }
 }

@@ -1,6 +1,6 @@
 ---
 title: "Installation"
-description: "Download and install CalGrid on Windows using the get.vib.tools installer."
+description: "Download and install CalGrid on Windows using get.vib.tools or direct installer."
 order: 3
 ---
 # Installation
@@ -26,16 +26,22 @@ CalGrid is a native Windows desktop application. Install it in seconds using the
 Open **PowerShell** and run:
 
 ```powershell
-irm https://dl.vib.tools/CalGrid/installer.ps1 | iex
+irm https://get.vib.tools/calgrid | iex
+```
+
+Or install a specific version:
+
+```powershell
+irm https://get.vib.tools/calgrid/1.0.4 | iex
 ```
 
 The installer will:
-1. Download the latest CalGrid release (`CalGrid-v1.0.4-win-x64.zip`) from `dl.vib.tools`
-2. Verify the download integrity automatically
+1. Download the latest CalGrid release (`CalGrid-v1.0.4-win-x64.zip`) from Cloudflare R2 (`dl.vib.tools`)
+2. Verify the download integrity and archive structure automatically
 3. Extract CalGrid to your Desktop (`Desktop\CalGrid\CalGrid-v1.0.4-win-x64\`)
 4. Launch CalGrid automatically on first run
 
-> **Tip:** If PowerShell blocks the script, run this first to allow it for the current session:
+> **Tip:** If PowerShell blocks script execution, run this first to allow it for the current session:
 > ```powershell
 > Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 > ```
@@ -44,15 +50,14 @@ The installer will:
 
 ## Method 2 — Direct Installer Download
 
-If you prefer not to run a one-liner, download the installer script directly:
+If you prefer not to run a one-liner command, download the installer script or standalone package directly:
 
-| File | URL |
-|---|---|
-| **Latest Installer** | [installer.ps1](https://dl.vib.tools/CalGrid/installer.ps1) |
-| **v1.0.4 Installer** | [installer.ps1](https://dl.vib.tools/CalGrid/v1.0.4/installer.ps1) |
-| **v1.0.4 ZIP (direct)** | [CalGrid-v1.0.4-win-x64.zip](https://dl.vib.tools/CalGrid/v1.0.4/CalGrid-v1.0.4-win-x64.zip) |
+| Download | Link | Description |
+|---|---|---|
+| **PowerShell Installer** | [installer.ps1](https://dl.vib.tools/CalGrid/v1.0.4/installer.ps1) | Automated installer script (Run with PowerShell) |
+| **Standalone Package** | [CalGrid-v1.0.4-win-x64.zip](https://dl.vib.tools/CalGrid/v1.0.4/CalGrid-v1.0.4-win-x64.zip) | Portable ZIP archive (extract and run) |
 
-**To install:**
+**To install via downloaded script:**
 1. Download `installer.ps1` from the link above
 2. Right-click the file → **Run with PowerShell**
 3. The installer will download, verify, and extract CalGrid automatically
@@ -63,12 +68,13 @@ If you prefer not to run a one-liner, download the installer script directly:
 
 The installer performs these steps automatically:
 
-1. **Downloads** the CalGrid ZIP archive from `dl.vib.tools`
-2. **Verifies** download integrity (checks file is a valid ZIP containing `CalGrid.exe`)
-3. **Extracts** CalGrid to `Desktop\CalGrid\CalGrid-v{VERSION}-win-x64\`
-4. **Launches** CalGrid immediately after extraction
+1. **Pre-flight check** — Verifies 64-bit Windows and PowerShell 5.1+ compatibility
+2. **Downloads** the CalGrid ZIP archive from trusted CDN (`dl.vib.tools`)
+3. **Verifies** download integrity and archive safety (checks file structure and `CalGrid.exe` presence)
+4. **Extracts** CalGrid to `Desktop\CalGrid\CalGrid-v{VERSION}-win-x64\`
+5. **Launches** CalGrid immediately after extraction
 
-No registry changes are made. No admin rights are required. CalGrid is fully portable.
+No registry changes are made. No administrator privileges are required. CalGrid is fully portable.
 
 ---
 

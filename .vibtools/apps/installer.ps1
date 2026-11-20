@@ -1,4 +1,4 @@
-﻿# CalGrid Windows x64 installer — powered by get.vib.tools
+# CalGrid Windows x64 installer — powered by get.vib.tools
 # Edge-injected variables: $APP_SLUG, $APP_VERSION, $APP_NAME
 # Fallback values are used only when running this script directly without edge injection.
 # Windows PowerShell 5.1 / PowerShell 7.x. No administrator privileges required.
@@ -16,9 +16,11 @@ if (-not (Get-Variable -Name APP_NAME -Scope Script -ErrorAction SilentlyContinu
     $APP_NAME = 'CalGrid'
 }
 
-$ReleaseFolder = $APP_NAME + '-v' + $APP_VERSION + '-win-x64'
+# Safely handle optional leading 'v' or 'V' (e.g. 'v1.0.4' -> '1.0.4')
+$cleanVersion  = $APP_VERSION.TrimStart('vV')
+$ReleaseFolder = $APP_NAME + '-v' + $cleanVersion + '-win-x64'
 $ReleaseZip    = $ReleaseFolder + '.zip'
-$ReleaseUrl    = 'https://dl.vib.tools/' + $APP_NAME + '/v' + $APP_VERSION + '/' + $ReleaseZip
+$ReleaseUrl    = 'https://dl.vib.tools/' + $APP_NAME + '/v' + $cleanVersion + '/' + $ReleaseZip
 
 function Test-CalGridArchive {
     param([string]$ZipPath, [string]$RootName, [long]$ZipBytes)
@@ -127,7 +129,7 @@ function Install-CalGridRelease {
         }
         $target = Join-Path $root $ReleaseFolder
         if (Test-Path -LiteralPath $target) {
-            throw ($APP_NAME + ' v' + $APP_VERSION + ' already installed. No existing files changed.')
+            throw ($APP_NAME + ' v' + $cleanVersion + ' already installed. No existing files changed.')
         }
         $lockPath = Join-Path $root ('.' + $APP_SLUG + '-installer.lock')
         $lock     = [IO.File]::Open($lockPath,[IO.FileMode]::OpenOrCreate,[IO.FileAccess]::ReadWrite,[IO.FileShare]::None)
@@ -161,7 +163,7 @@ function Install-CalGridRelease {
         if ($drive.AvailableFreeSpace -lt ($expectedBytes * 3 + 134217728)) {
             throw 'Not enough free disk space to install ' + $APP_NAME + '.'
         }
-        Write-Host ($APP_NAME + ' v' + $APP_VERSION + ': downloading ' + [math]::Round($expectedBytes/1MB, 1) + ' MB...')
+        Write-Host ($APP_NAME + ' v' + $cleanVersion + ': downloading ' + [math]::Round($expectedBytes/1MB, 1) + ' MB...')
         Receive-AppZip -Uri $url -Destination $zipTemp -ExpectedBytes $expectedBytes -Http $client
         Test-CalGridArchive -ZipPath $zipTemp -RootName $ReleaseFolder -ZipBytes $expectedBytes
         Write-Host 'Archive structure verified.'
