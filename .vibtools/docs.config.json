@@ -6,7 +6,7 @@
   "title": "CalGrid",
   "category": "Desktop Apps",
   "description": "High-deliverability Windows desktop scheduler and batch dispatcher for Google Calendar invitations with anti-spam safeguards.",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "accentColor": "#4F46E5",
   "docsPath": "docs",
   "logoPath": ".vibtools/logo.png",

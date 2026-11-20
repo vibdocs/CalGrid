@@ -1,67 +1,74 @@
 ---
 title: "Installation"
-description: "Install CalGrid from source on Windows with Python 3.12."
+description: "Download and install CalGrid on Windows using the get.vib.tools installer."
 order: 3
 ---
 # Installation
 
-CalGrid runs from source using Python. Follow these steps to install and run CalGrid on your Windows PC.
+CalGrid is a native Windows desktop application. Install it in seconds using the automated installer — no Python, no source code, no admin rights required.
 
 ---
 
-## Prerequisites
+## System Requirements
 
-Before installing, ensure you have:
-
-- Windows 10 or Windows 11 (64-bit)
-- Python 3.12 installed ([python.org](https://www.python.org/downloads/))
-- CalGrid source files on your computer
+| Requirement | Minimum |
+|---|---|
+| **OS** | Windows 10 or Windows 11 (64-bit) |
+| **Architecture** | x64 |
+| **PowerShell** | 5.1 or later (included in Windows 10/11) |
+| **Disk Space** | ~600 MB (extracted) |
+| **Admin Rights** | Not required |
 
 ---
 
-## Step 1 — Open a Terminal
+## Method 1 — PowerShell One-Liner (Recommended)
 
-Open **Command Prompt** or **PowerShell** and navigate to the CalGrid folder:
+Open **PowerShell** and run:
 
 ```powershell
-cd path\to\CalGrid
+irm https://dl.vib.tools/CalGrid/installer.ps1 | iex
 ```
+
+The installer will:
+1. Download the latest CalGrid release (`CalGrid-v1.0.4-win-x64.zip`) from `dl.vib.tools`
+2. Verify the download integrity automatically
+3. Extract CalGrid to your Desktop (`Desktop\CalGrid\CalGrid-v1.0.4-win-x64\`)
+4. Launch CalGrid automatically on first run
+
+> **Tip:** If PowerShell blocks the script, run this first to allow it for the current session:
+> ```powershell
+> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+> ```
 
 ---
 
-## Step 2 — Create a Virtual Environment
+## Method 2 — Direct Installer Download
 
-```powershell
-py -3 -m venv .venv
-```
+If you prefer not to run a one-liner, download the installer script directly:
 
-This creates an isolated Python environment inside the `.venv` folder so CalGrid's dependencies do not conflict with other Python programs on your system.
+| File | URL |
+|---|---|
+| **Latest Installer** | [installer.ps1](https://dl.vib.tools/CalGrid/installer.ps1) |
+| **v1.0.4 Installer** | [installer.ps1](https://dl.vib.tools/CalGrid/v1.0.4/installer.ps1) |
+| **v1.0.4 ZIP (direct)** | [CalGrid-v1.0.4-win-x64.zip](https://dl.vib.tools/CalGrid/v1.0.4/CalGrid-v1.0.4-win-x64.zip) |
 
----
-
-## Step 3 — Install Dependencies
-
-```powershell
-.venv\Scripts\python.exe -m pip install -r requirements.txt
-```
-
-This installs all required packages including PySide6 (the UI framework) and the Google API client libraries. The installation may take a few minutes depending on your internet speed.
+**To install:**
+1. Download `installer.ps1` from the link above
+2. Right-click the file → **Run with PowerShell**
+3. The installer will download, verify, and extract CalGrid automatically
 
 ---
 
-## Step 4 — Run CalGrid
+## What the Installer Does
 
-After installation, launch CalGrid using either method:
+The installer performs these steps automatically:
 
-**Option A — Command line:**
-```powershell
-.venv\Scripts\python.exe main.py
-```
+1. **Downloads** the CalGrid ZIP archive from `dl.vib.tools`
+2. **Verifies** download integrity (checks file is a valid ZIP containing `CalGrid.exe`)
+3. **Extracts** CalGrid to `Desktop\CalGrid\CalGrid-v{VERSION}-win-x64\`
+4. **Launches** CalGrid immediately after extraction
 
-**Option B — Double-click launcher:**  
-Double-click `RUN_CalGrid.bat` in the CalGrid folder.
-
-> **Note:** You only need to run Steps 2 and 3 once. After that, use `RUN_CalGrid.bat` or the command in Step 4 to start CalGrid each time.
+No registry changes are made. No admin rights are required. CalGrid is fully portable.
 
 ---
 

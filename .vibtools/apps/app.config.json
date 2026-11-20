@@ -1,0 +1,65 @@
+{
+  "$schema": "https://apps.vib.tools/schemas/vibtools-app.schema.json",
+  "schemaVersion": 1,
+  "slug": "calgrid",
+  "name": "CalGrid",
+  "tagline": "Batch Google Calendar invitations with anti-spam personalization — no admin rights required.",
+  "description": "CalGrid is a Windows desktop application for scheduling and dispatching personalized Google Calendar invitations in bulk. It supports anti-spam dynamic tags, spintax, multi-workspace tabs, Google Drive attachments, and high-deliverability batching — all without requiring administrator privileges.",
+  "category": "productivity",
+  "platforms": ["windows"],
+  "license": "commercial",
+  "latest": "1.0.4",
+  "installer": "https://dl.vib.tools/CalGrid/installer.ps1",
+  "links": {
+    "homepage": "https://vib.tools/calgrid",
+    "docs": "https://docs.vib.tools/calgrid",
+    "support": "https://vib.tools/calgrid"
+  },
+  "versions": {
+    "1.0.4": {
+      "released_at": "2026-11-20",
+      "channel": "stable",
+      "platforms": ["windows"],
+      "artifacts": [
+        {
+          "platform": "windows",
+          "arch": "x64",
+          "url": "https://dl.vib.tools/CalGrid/v1.0.4/CalGrid-v1.0.4-win-x64.zip",
+          "size": "183 MB",
+          "sha256": "e4178cc65e511d98401ecb25500fa100aaaf5056d6a7272d679f0e55db1ca108",
+          "installer": "https://dl.vib.tools/CalGrid/v1.0.4/installer.ps1"
+        }
+      ]
+    },
+    "1.0.3": {
+      "released_at": "2026-11-20",
+      "channel": "stable",
+      "platforms": ["windows"],
+      "artifacts": [
+        {
+          "platform": "windows",
+          "arch": "x64",
+          "url": "https://dl.vib.tools/CalGrid/v1.0.3/CalGrid-v1.0.3-win-x64.zip",
+          "size": "183 MB",
+          "sha256": "f9ba647c00b2068fae408c16b81c741658631a9d633c82a2cb31e73339904f26",
+          "installer": "https://dl.vib.tools/CalGrid/v1.0.3/installer.ps1"
+        }
+      ]
+    },
+    "1.0.2": {
+      "released_at": "2026-11-16",
+      "channel": "stable",
+      "platforms": ["windows"],
+      "artifacts": [
+        {
+          "platform": "windows",
+          "arch": "x64",
+          "url": "https://dl.vib.tools/CalGrid/v1.0.2/CalGrid-v1.0.2-win-x64.zip",
+          "size": "183 MB",
+          "sha256": "6a81522bc441fa37e059f4ac10ab1df3bfcaa68939994f2e91364c8b427cf510",
+          "installer": "https://dl.vib.tools/CalGrid/v1.0.2/installer.ps1"
+        }
+      ]
+    }
+  }
+}
