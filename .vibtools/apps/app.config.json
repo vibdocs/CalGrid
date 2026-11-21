@@ -10,7 +10,7 @@
   "latest": "1.0.4",
   "installer": {
     "type": "powershell",
-    "script": ".vibtools/apps/installer.ps1"
+    "script": "https://dl.vib.tools/CalGrid/installer.ps1"
   },
   "docs": {
     "features": ".vibtools/apps/features.md",

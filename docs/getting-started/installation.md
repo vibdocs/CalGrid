@@ -54,7 +54,8 @@ If you prefer not to run a one-liner command, download the installer script or s
 
 | Download | Link | Description |
 |---|---|---|
-| **PowerShell Installer** | [installer.ps1](https://dl.vib.tools/CalGrid/v1.0.4/installer.ps1) | Automated installer script (Run with PowerShell) |
+| **Latest Installer** | [installer.ps1](https://dl.vib.tools/CalGrid/installer.ps1) | Automated master installer (Run with PowerShell) |
+| **v1.0.4 Installer** | [installer.ps1](https://dl.vib.tools/CalGrid/v1.0.4/installer.ps1) | Version-locked installer script |
 | **Standalone Package** | [CalGrid-v1.0.4-win-x64.zip](https://dl.vib.tools/CalGrid/v1.0.4/CalGrid-v1.0.4-win-x64.zip) | Portable ZIP archive (extract and run) |
 
 **To install via downloaded script:**
