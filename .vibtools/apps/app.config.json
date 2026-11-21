@@ -3,11 +3,11 @@
   "schemaVersion": 1,
   "slug": "calgrid",
   "name": "CalGrid",
-  "tagline": "Batch Google Calendar invitations with anti-spam personalization — no admin rights required.",
+  "tagline": "Create and personalize Google Calendar invitations in multiple Windows workspaces.",
   "category": "Productivity",
   "access": "Paid",
   "icon": "https://raw.githubusercontent.com/vibdocs/CalGrid/main/.vibtools/logo.png",
-  "latest": "1.0.4",
+  "latest": "1.0.6",
   "installer": {
     "type": "powershell",
     "script": "https://dl.vib.tools/CalGrid/installer.ps1"
@@ -24,13 +24,22 @@
   ],
   "requirements": [
     "Windows 10 or Windows 11 (64-bit)",
-    "PowerShell 5.1 or PowerShell 7+"
+    "Internet, a valid CalGrid license and a Google Calendar account",
+    "PowerShell 5.1+ for automated installer (optional for portable ZIP)"
   ],
   "links": {
     "docs": "https://docs.vib.tools/calgrid",
     "source": "https://github.com/vibdocs/CalGrid"
   },
   "versions": {
+    "1.0.6": {
+      "url": "https://dl.vib.tools/CalGrid/v1.0.6/CalGrid-v1.0.6-win-x64.zip",
+      "installer": "https://dl.vib.tools/CalGrid/v1.0.6/installer.ps1",
+      "size": "183 MiB",
+      "sha256": "4e670a387db320f470428413d72f24db7b1820bb88dd493d03c3d4891509a84d",
+      "released_at": "2026-11-21",
+      "channel": "stable"
+    },
     "1.0.4": {
       "url": "https://dl.vib.tools/CalGrid/v1.0.4/CalGrid-v1.0.4-win-x64.zip",
       "installer": "https://dl.vib.tools/CalGrid/v1.0.4/installer.ps1",

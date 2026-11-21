@@ -5,44 +5,16 @@ order: 1
 ---
 # Settings
 
-CalGrid's Settings dialog lets you configure every aspect of dispatch behavior, rate limiting, reminders, and application preferences.
+Open CalGrid's **Settings** control in the window title area. Settings are grouped so you can find an option quickly.
 
----
+- **Calendar:** Default Calendar ID, batch size, event duration, timezone and invitation notifications.
+- **Rate:** Request pacing, retry attempts and timeouts.
+- **Invites:** Guest visibility, guest invitations, reminders and Meet links.
+- **Advance:** Optional pacing, appointment staggering and multi-tier reminders.
+- **App:** Application behavior and log-related preferences.
 
-## Opening Settings
+Use the search field to find a setting, choose your value and select **Save Settings**. **Reset Defaults** prepares default values; save to apply them.
 
-**Method 1:** Click the **⚙** button in the title bar.  
-**Method 2:** Press `Ctrl + ,`.
+For safe starting choices, keep a conservative rate and double-check timezone and guest visibility.
 
----
-
-## Settings Categories
-
-| Category | Contents |
-|---|---|
-| [📅 Calendar](application-settings.md#calendar-settings) | Calendar ID, batch size, duration, timezone, send updates |
-| [⏱️ Rate](application-settings.md#rate-settings) | API rate limit, retries, backoff delay, timeout |
-| [🔔 Invites](application-settings.md#invitations-settings) | Guest visibility, Meet links, reminders |
-| [🛡️ Advance](application-settings.md#advance-settings) | Jitter, slot stagger, multi-tier reminders, entropy injection |
-| [💻 App](application-settings.md#app-settings) | Log retention, auto-scroll, desktop notifications, sound alerts |
-
----
-
-## Navigating Settings
-
-- **Search box** — type any keyword (e.g., "timezone", "batch", "jitter") to filter settings across all categories
-- **Category pills** — click a category button to show only that category's settings
-- **Ctrl+F** — focus the search box
-- **Escape** — clears the search box if focused; otherwise closes the dialog
-
----
-
-## Saving and Resetting
-
-| Action | Button | Keyboard |
-|---|---|---|
-| Save changes | **Save Settings** | Enter |
-| Discard changes | **Cancel** | Escape |
-| Reset all to defaults | **↺ Reset Defaults** | — |
-
-Changes take effect immediately after saving. Cancelled changes are discarded.
+[All settings explained](application-settings.md) · [Limitations](../help/limitations.md)

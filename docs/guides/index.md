@@ -5,46 +5,15 @@ order: 1
 ---
 # Feature Guides
 
-Complete reference for every CalGrid feature and UI element.
+Use these guides to learn the **CalGrid v1.0.6** controls.
 
----
-
-## Interface
-
-| Guide | Description |
+| Task | Guide |
 |---|---|
-| [Interface Overview](interface-overview.md) | Complete map of the CalGrid window |
-| [Workspace Tabs](workspace-tabs.md) | Creating, switching, renaming, and closing workspaces |
-| [Dispatch Modes](dispatch-modes.md) | Safe / Normal / Fast / Ultra modes |
-| [Bottom Status Bar](bottom-bar.md) | Tags, Debug, Docs, Help, Report, About |
+| Find controls and workspaces | [Interface Overview](interface-overview.md), [Workspace Tabs](workspace-tabs.md) |
+| Connect your account | [Google Connection](google-auth.md) |
+| Build an invitation | [Event Details](event-details.md), [Recipients](receivers.md), [Attachments](attachments.md) |
+| Personalize content | [Template Tags & Spintax](template-tags.md), [Brand Identity](brand-identity.md) |
+| Send and track invitations | [Dispatch Modes](dispatch-modes.md), [Controls](dispatch-controls.md), [Progress](progress-monitoring.md) |
+| Find help | [Bottom Bar](bottom-bar.md), [Debug](debug-dialog.md), [Connection Checks](offline-test-runner.md) |
 
----
-
-## Campaign Setup
-
-| Guide | Description |
-|---|---|
-| [Google Auth](google-auth.md) | Connecting and managing Google accounts |
-| [Event Details](event-details.md) | Event name, date/time, location, message |
-| [Template Tags](template-tags.md) | Dynamic personalization with tags and spintax |
-| [Receivers](receivers.md) | Adding, importing, and deduplicating recipients |
-| [Brand Identity](brand-identity.md) | Brand name and calendar customization |
-| [Attachments](attachments.md) | Attaching files via Google Drive |
-
----
-
-## Running Campaigns
-
-| Guide | Description |
-|---|---|
-| [Dispatch Controls](dispatch-controls.md) | Start, Pause, Resume, Stop |
-| [Progress Monitoring](progress-monitoring.md) | Live stats, progress bar, log panel |
-
----
-
-## Diagnostics
-
-| Guide | Description |
-|---|---|
-| [Debug Dialog](debug-dialog.md) | Real-time API diagnostics and log viewer |
-| [Offline Test Runner](offline-test-runner.md) | Running built-in offline tests |
+Start with [your first campaign](../workflows/sending-first-campaign.md) if you prefer a single guided example.

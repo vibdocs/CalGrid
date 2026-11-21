@@ -5,24 +5,14 @@ order: 1
 ---
 # Getting Started
 
-Welcome to CalGrid. This section walks you through everything you need to run CalGrid for the first time and connect it to Google Calendar.
+Set up **CalGrid v1.0.6** with these steps:
 
----
+1. [Check Windows requirements](system-requirements.md).
+2. [Download and open CalGrid](installation.md).
+3. [Enter your CalGrid license key](first-time-setup.md).
+4. [Connect a Google account](../guides/google-auth.md).
+5. [Preview and send your first invitation](../workflows/sending-first-campaign.md).
 
-## Steps
+If CalGrid asks for a Google OAuth desktop JSON file, follow [Google API Setup](google-api-setup.md). Keep your license key and Google credentials private.
 
-1. **[System Requirements](system-requirements.md)** — Verify your Windows PC meets the requirements
-2. **[Installation](installation.md)** — Install CalGrid from source on your Windows PC
-3. **[First-Time Setup](first-time-setup.md)** — Activate your license and launch the application
-4. **[Google API Setup](google-api-setup.md)** — Create a Google Cloud project and connect your Calendar account
-
----
-
-## Quick Start Summary
-
-```
-Install Python 3.12 → Create venv → Install requirements →
-Activate license → Set up Google OAuth → Send first campaign
-```
-
-If you have already installed CalGrid and want to send your first batch of invitations, go directly to [Sending Your First Campaign](../workflows/sending-first-campaign.md).
+After signing in, create separate workspaces for different recipient lists and events.

@@ -1,42 +1,30 @@
 ---
 title: "CalGrid — User Documentation"
-description: "High-deliverability Windows desktop scheduler and batch dispatcher for Google Calendar invitations with anti-spam safeguards."
-version: "1.0.2"
+description: "User-friendly Windows guide for preparing and sending Google Calendar invitations."
+version: "1.0.6"
 category: "Desktop Apps"
 draft: false
 ---
-# CalGrid — User Documentation
+# CalGrid — User Guide
 
-**CalGrid** is a Windows desktop application for scheduling and batch-sending Google Calendar invitations at scale. With a multi-workspace interface, smart anti-spam engine, Google Drive attachments, and brand identity tools, CalGrid is built for high-deliverability calendar outreach.
+**CalGrid v1.0.6** helps you prepare, personalize and send Google Calendar invitations from a Windows computer. Use separate workspaces for different campaigns and track each batch in one place.
 
----
+## Start here
 
-## Documentation Sections
+1. [Download and install CalGrid](getting-started/installation.md).
+2. [Activate your license](getting-started/first-time-setup.md).
+3. [Connect Google Calendar](guides/google-auth.md).
+4. [Create your first invitation](workflows/sending-first-campaign.md).
 
-| Section | Description |
-|---|---|
-| [Getting Started](getting-started/index.md) | Installation, setup, and first launch |
-| [Interface Guide](guides/interface-overview.md) | Understanding the main UI |
-| [Feature Guides](guides/index.md) | Complete feature reference |
-| [Workflows](workflows/index.md) | Step-by-step task guides |
-| [Settings](settings/index.md) | All settings explained |
-| [Help & Troubleshooting](help/index.md) | Troubleshooting, FAQ, limitations |
+## Explore the features
 
----
+- [Window and workspace tabs](guides/interface-overview.md)
+- [Recipients and imports](guides/receivers.md)
+- [Event details and attachments](guides/event-details.md)
+- [Message formatting, tags and Spintax](guides/template-tags.md)
+- [Sending controls and progress](guides/dispatch-controls.md)
+- [Settings](settings/index.md) and [Help](help/index.md)
 
-## Quick Navigation
+**Important:** Invitations use your own Google account. Google's limits and policies apply; a completed send request does not guarantee inbox delivery. Use CalGrid only for appropriate recipients.
 
-- **New user?** Start with [Getting Started](getting-started/index.md)
-- **Need Google Calendar setup?** See [Google API Setup](getting-started/google-api-setup.md)
-- **Sending invites?** See [Sending Your First Campaign](workflows/sending-first-campaign.md)
-- **Customizing behavior?** See [Settings Reference](settings/application-settings.md)
-- **Having problems?** See [Troubleshooting](help/troubleshooting.md)
-
----
-
-## About CalGrid
-
-CalGrid v1.0.2 — Google Calendar Dispatcher  
-Product of Vib Tools Workspace  
-Platform: Windows 10/11 (64-bit)  
-Runtime: Python 3.12 + PySide6 (Qt Widgets)
+[Download CalGrid](https://get.vib.tools/calgrid?download=1) · [App page](https://apps.vib.tools/app/calgrid)

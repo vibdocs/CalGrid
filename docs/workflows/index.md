@@ -3,17 +3,15 @@ title: "Workflows"
 description: "Step-by-step guides for sending campaigns, bulk recipient import, and personalized invites."
 order: 1
 ---
-# Workflows
+# Step-by-Step Workflows
 
-Step-by-step guides for the most common CalGrid tasks.
+Follow a short guide for the task you want to complete.
 
----
+- [Send your first invitation campaign](sending-first-campaign.md)
+- [Import a recipient list](bulk-import.md)
+- [Run separate workspaces](multi-workspace.md)
+- [Personalize your invitations](personalized-invites.md)
 
-## Available Workflows
+Before sending real invitations, confirm your license, connected Google account, timezone, recipient permissions and preview.
 
-| Workflow | Description |
-|---|---|
-| [Sending Your First Campaign](sending-first-campaign.md) | Complete walkthrough from setup to dispatch |
-| [Bulk Recipient Import](bulk-import.md) | Importing large lists from CSV or Excel files |
-| [Running Parallel Campaigns](multi-workspace.md) | Operating multiple workspaces simultaneously |
-| [Personalized Invites](personalized-invites.md) | Using tags and spintax for per-recipient messages |
+[Feature Guides](../guides/index.md) · [Settings](../settings/index.md)
